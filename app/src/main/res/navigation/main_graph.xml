@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.crudmaxprocess.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_clientsListFragment2"
+            app:destination="@id/clientsListFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_editClientsFragment"
+            app:destination="@id/editClientsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_saveClientsFragment"
+            app:destination="@id/saveClientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientsListFragment2"
+        android:name="com.example.crudmaxprocess.presentation.clientslist.ClientsListFragment"
+        android:label="fragment_clients_list"
+        tools:layout="@layout/fragment_clients_list" />
+    <fragment
+        android:id="@+id/editClientsFragment"
+        android:name="com.example.crudmaxprocess.presentation.updateclients.EditClientsFragment"
+        android:label="fragment_edit_clients"
+        tools:layout="@layout/fragment_edit_clients" />
+    <fragment
+        android:id="@+id/saveClientsFragment"
+        android:name="com.example.crudmaxprocess.presentation.saveclients.SaveClientsFragment"
+        android:label="SaveClientsFragment"
+        tools:layout="@layout/fragment_save_clients">
+        <argument
+            android:name="client"
+            app:argType="com.example.crudmaxprocess.domain.model.Client"
+             />
+
+    </fragment>
+</navigation>

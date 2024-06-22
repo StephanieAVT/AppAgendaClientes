@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/saveClientsRoot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registerClient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_back_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/cardView"
+            style="@style/TitlePageFontStyle16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:text="@string/save_clients_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/clientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_20"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/name_client"
+            android:inputType="text"
+            android:padding="14dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/clientCPF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/client_cpf"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/clientName"
+            app:layout_constraintStart_toStartOf="@id/clientName"
+            app:layout_constraintTop_toBottomOf="@id/clientName"
+            app:mask="___.___.___-__"
+            app:maskCharacter="_" />
+
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/clientBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/client_birth_date"
+            android:inputType="date"
+            android:padding="14dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/clientName"
+            app:layout_constraintStart_toStartOf="@id/clientName"
+            app:layout_constraintTop_toBottomOf="@id/clientCPF"
+            app:mask="__/__/____"
+            app:maskCharacter="_" />
+
+
+        <Spinner
+            android:id="@+id/UF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/client_uf"
+            android:inputType="text"
+            android:padding="14dp"
+            android:spinnerMode="dropdown"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/clientName"
+            app:layout_constraintTop_toBottomOf="@id/clientBirthDate">
+
+        </Spinner>
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/clientBirthDate"
+            app:layout_constraintStart_toStartOf="@id/clientBirthDate"
+            app:layout_constraintTop_toBottomOf="@id/UF"
+            app:mask="(__)_____-____"
+            app:maskCharacter="_" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/phone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_12"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_white"
+            android:gravity="center_vertical"
+            android:hint="@string/phone2"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/phone"
+            app:layout_constraintStart_toStartOf="@id/phone"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:mask="(__)_____-____"
+            app:maskCharacter="_" />
+
+
+        <Button
+            android:id="@+id/btnSaveClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_16"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_button"
+            android:text="@string/save"
+            android:textColor="@color/green"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@id/phone2"
+            app:layout_constraintStart_toStartOf="@id/phone2"
+            app:layout_constraintTop_toBottomOf="@id/phone2" />
+
+
+        <Button
+            android:id="@+id/btnEditClient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens_12"
+            android:layout_marginTop="@dimen/dimens_16"
+            android:layout_marginEnd="@dimen/dimens_12"
+            android:background="@drawable/bg_button"
+            android:text="@string/update_client"
+            android:textColor="@color/green"
+            android:visibility="gone"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@id/phone2"
+            app:layout_constraintStart_toStartOf="@id/phone2"
+            app:layout_constraintTop_toBottomOf="@id/phone2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CRUDApp</string>
+    <string name="name_client">Name</string>
+    <string name="client_cpf">CPF</string>
+    <string name="client_birth_date">Birth Date</string>
+    <string name="client_uf">UF</string>
+    <string name="register_date_hour">Register Date/Hour</string>
+    <string name="phone">Phone</string>
+    <string name="phone2">Phone (optional)</string>
+    <string name="save">Save</string>
+
+    <string name="save_client_successfully">Cliente salvo com sucesso</string>
+    <string name="save_client_error">Erro ao inserir cliente</string>
+    <string name="desafio_max_process">Desafio Max Process</string>
+
+
+    <string name="save_client">Salvar Clientes</string>
+    <string name="delete_clients">Excluir Clientes</string>
+    <string name="update_client">Editar Cliente</string>
+    <string name="show_client">Lista de Clientes</string>
+
+    <string name="show_client_error">Não conseguimos carregar a Lista de Clientes, tente mais tarde!</string>
+
+
+    <string name="btn_not">Agora não</string>
+    <string name="btn_delete">Excluir</string>
+
+
+    <string-array name="uf_array">
+        <item>Selecione um estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string name="save_clients_description">Complete os campos para salvar um novo cliente a sua agenda</string>
+    <string name="edit_clients_description">Agora é possível editar os campos do seu cliente</string>
+    <string name="edit_client">Edit client</string>
+    <string name="delete_client">Delete client\n</string>
+    <string name="delete_client_description">Voce deseja excluir o cliente %s da sua agenda? </string>
+    <string name="text_title_bottom_sheet">Detalhes do cliente</string>
+</resources>

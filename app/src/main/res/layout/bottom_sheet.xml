@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        style="@style/TitlePageFontStyle16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_title_bottom_sheet"
+        android:textAlignment="center"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/textName"
+        style="@style/SubtitleFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/textCpf"
+        style="@style/SubtitleFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="cpf" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/SubtitleFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="date" />
+
+    <TextView
+        android:id="@+id/uf"
+        style="@style/SubtitleFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="uf" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/SubtitleFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_16"
+        tools:text="phone" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_client" />
+
+</LinearLayout>
