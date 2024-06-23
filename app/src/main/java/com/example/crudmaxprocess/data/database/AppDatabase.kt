@@ -11,22 +11,4 @@ import com.example.crudmaxprocess.data.database.entity.ClientEntity
 abstract class AppDatabase : RoomDatabase() {
     abstract fun clientDao(): ClientDAO
 
-//    companion object {
-//        @Volatile
-//        private var INSTANCE: AppDatabase? = null
-//
-//        fun getInstance(context: Context): AppDatabase {
-//            synchronized(this) {
-//                var instance: AppDatabase? = INSTANCE
-//                if (instance == null) {
-//                    instance = Room.databaseBuilder(
-//                        context,
-//                        AppDatabase::class.java,
-//                    "client_database_app"
-//                    ).build()
-//                }
-//                return instance
-//            }
-//        }
-//    }
 }

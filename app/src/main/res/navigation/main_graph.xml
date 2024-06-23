@@ -26,11 +26,6 @@
         android:label="fragment_clients_list"
         tools:layout="@layout/fragment_clients_list" />
     <fragment
-        android:id="@+id/editClientsFragment"
-        android:name="com.example.crudmaxprocess.presentation.updateclients.EditClientsFragment"
-        android:label="fragment_edit_clients"
-        tools:layout="@layout/fragment_edit_clients" />
-    <fragment
         android:id="@+id/saveClientsFragment"
         android:name="com.example.crudmaxprocess.presentation.saveclients.SaveClientsFragment"
         android:label="SaveClientsFragment"
